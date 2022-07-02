@@ -19,7 +19,8 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link rel="stylesheet" href="./css/styles.css" />
+ 
+    <link rel="stylesheet" href="./css/main.min.css">
   </head>
   <body>
     <!--header  -->
@@ -66,9 +67,9 @@
       <!-- hero -->
       <section class="hero">
         <div class="container">
-          <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
+          <h1 class="hero__title">Эффективные решения для вашего бизнеса</h1>
 
-          <button type="button" class="hero-button" data-modal-open>
+          <button type="button" class="hero__button" data-modal-open>
             Заказать услугу
           </button>
         </div>
@@ -159,7 +160,7 @@
       <!-- about -->
       <section class="about section">
         <div class="container">
-          <h2 class="about-title visually-hidden">Организация работы</h2>
+          <h2 class="about__title visually-hidden">Организация работы</h2>
 
           <ul class="about-list">
             <li class="about-item">
@@ -216,7 +217,7 @@
       <!-- pictures -->
       <section class="pictures section">
         <div class="container">
-          <h2 class="pictures-tile">Чем мы занимаемся</h2>
+          <h2 class="pictures-title">Чем мы занимаемся</h2>
           <ul class="images">
             <li class="pictures-img">
               <img
@@ -550,25 +551,3 @@
     <script src="./js/modal.js"></script>
   </body>
 </html>
-
-
-
-
-
-{
-  "liveSassCompile.settings.formats": [
-    {
-      "format": "expanded",
-      "extensionName": ".css",
-      "savePath": "/css"
-    },
-    {
-      "format": "compressed",
-      "extensionName": ".min.css",
-      "savePath": "/css"
-    }
-  ],
-  "liveSassCompile.settings.excludeList": ["**/node_modules/**", ".vscode/**"],
-  "liveSassCompile.settings.generateMap": true,
-  "liveSassCompile.settings.autoprefix": ["> 1%", "last 2 versions"]
-}
