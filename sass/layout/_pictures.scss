@@ -5,6 +5,18 @@
   text-transform: uppercase;
   color: var(--hero-color);
 }
+.images {
+  display: flex;
+  align-items: center;
+}
+.pictures-img {
+  position: relative;
+  flex-basis: 370px;
+  align-items: center;
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
+}
 .product {
   position: absolute;
   display: flex;
@@ -15,9 +27,6 @@
   height: 70px;
   background: rgba(47, 48, 58, 0.8);
 }
-.pictures {
-  padding-top: 0;
-}
 .pictures-title {
   text-align: center;
   font-weight: 700;
@@ -27,16 +36,7 @@
   color: var(--title-color);
   margin-bottom: 50px;
 }
-.pictures-img {
-  position: relative;
-  flex-basis: 370px;
-  align-items: center;
-  &:not(:last-child) {
-  margin-right: 30px;
-}
-}
 
-.images {
-  display: flex;
-  align-items: center;
+.pictures {
+  padding-top: 0;
 }

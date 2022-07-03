@@ -3,29 +3,27 @@
   padding-bottom: 24px;
   border-bottom: 1px solid #ececec;
 }
-.header-nav {
-  display: flex;
-  align-items: center;
-}
-.header-list {
-  display: flex;
-}
-.header-item:not(:last-child) {
-  margin-right: 50px;
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  /* outline: 1px solid red; */
 }
 .header .container {
   display: flex;
 }
-.contacts {
+.header__nav {
   display: flex;
   align-items: center;
-  justify-content: center;
-  margin-left: auto;
 }
-.contacts-item:not(:last-child) {
+.nav__list {
+  display: flex;
+}
+.nav__item:not(:last-child) {
   margin-right: 50px;
 }
-.header-link {
+.nav__link {
   font-weight: 500;
   font-size: 14px;
   padding-top: 32px;
@@ -37,14 +35,13 @@
   transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  .header-list &:hover,
-  .header-list &k:focus {
+  .nav__list &:hover,
+  .nav__list &:focus {
     color: var(--link-color);
   }
 }
-
 .current::after {
-  content: "";
+  content: " ";
   position: absolute;
   display: block;
   bottom: 0;
@@ -55,11 +52,22 @@
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  .header-list .header-link & {
+  .nav__list .nav__link & {
     color: var(--link-color);
   }
 }
-.mail {
+
+.contacts {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: auto;
+}
+.contacts__item:not(:last-child) {
+  margin-right: 50px;
+}
+
+.contacts__mail {
   display: flex;
   align-items: center;
   font-weight: 500;
@@ -76,10 +84,8 @@
   color: var(--contacts-color);
 }
 
-.coll {
-  margin-right: 50px;
-}
-.tel {
+
+.contacts__tel {
   display: flex;
   align-items: center;
   font-weight: 500;
@@ -96,17 +102,14 @@
   }
 }
 
-.icon-mail {
+.contacts__icon-mail {
   width: 16px;
   height: 12px;
   margin-right: 10px;
   fill: currentColor;
-  // &:hover,
-  // &:focus {
-  //   color: var(--link-color);
-  // }
+
 }
-.icon-tel {
+.contacts__icon-tel {
   width: 10px;
   height: 16px;
   margin-right: 10px;

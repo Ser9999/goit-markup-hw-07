@@ -2,7 +2,6 @@
 @import './utils/variables';
 @import './utils/visually-hidden';
 
-
 // base
 @import './base/reset';
 @import './base/base';
@@ -10,14 +9,14 @@
 
 // components
 @import './components/logo';
+@import './components/button';
 @import './components/modal';
+@import './components/team-soc-list';
 
-
-
-// layouts
+// layout
 @import './layout/header';
 @import './layout/hero';
-@import './layout/about';
+@import './layout/benefits';
 @import './layout/pictures';
 @import './layout/team';
 @import './layout/clients';
