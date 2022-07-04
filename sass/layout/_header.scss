@@ -13,7 +13,7 @@
 .header .container {
   display: flex;
 }
-.header__nav {
+.nav {
   display: flex;
   align-items: center;
 }
@@ -40,7 +40,7 @@
     color: var(--link-color);
   }
 }
-.current::after {
+.nav__link--current::after {
   content: " ";
   position: absolute;
   display: block;
